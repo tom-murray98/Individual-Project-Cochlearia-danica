@@ -1,0 +1,19 @@
+no combine
+no trim
+dump ref in ref.gen
+make yml file using nano
+use ost with bam files
+primaery mappings to n=6
+flagstats (already in use, use with samtools mean coverage/percent covered)
+should get mean covarge and percent covered (using script?)
+could do ratio between sub-genomes
+sub genomes
+small chromosomes ignore
+run scafs 1-6 for n=6
+run scafs 1-7 for n=7
+
+only running setup, 3, and 4 for pipe
+dont use unpaired reads
+dar_1
+NEN_1
+

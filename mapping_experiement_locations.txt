@@ -1,0 +1,45 @@
+					
+in	/share/Yant_Group_Shared/Cochlearia_83_Dec_13_2022_S4_lane1/ngs_pipe/02.trimmed
+		SVA_1
+		LWA_10
+						
+in	/gpfs01/home/mbztth/cochlearia_third/trimmed/ 					
+		DIE_3 	D3_L4
+		BRE_3	F7_L4	
+		TAT_5	D8_L5	
+		ULR_4	E1_L5	
+		FDE_3  	H11_L4		
+
+
+in	/gpfs01/home/mbzly/2022.Cochlearia.MS1/ngs_pipe/STORE_BACK/02.trimmed/ 					
+		JON_001				
+		DAR_1				
+		DAR_3								
+		FOR_1				
+		RYE_1				
+		CUM_1	
+		SCO_1				
+			
+		SPU_010
+		SPU_009
+		SPU_008
+		SPU_006		
+		SKF_009
+		SKF_005
+		SKF_003
+		SKF_002
+		TET_008
+		TET_006
+		TET_004
+		TET_002
+
+		AAH_3
+		AAH_2
+		AAH_1
+		AAH_4
+
+
+in 	/share/Yant_Group_Shared/OSW_for_Tom/
+		OSW 
+
+
