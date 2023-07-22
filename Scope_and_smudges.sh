@@ -17,18 +17,19 @@ mkdir tmp
 conda activate /gpfs01/home/mbxtm2/miniconda3/envs/kmc_genomescope
 
 ls /gpfs01/home/mbxtm2/Danica_raw_revio/out.fastq.gz > FILES
-
+# Runs kmc to count k-mers
 echo now for kmc
 kmc -k21 -t40 -m400 -ci1 -cs10000 @FILES reads tmp/
 kmc_tools transform reads histogram reads.histo -cx10000
-
+# Runs GenomeScope2
 echo now for Genomescope
+# -p used to select ploidy
 genomescope2 -i reads.histo -o . -k 21 -p 6
 
 conda deactivate
 
 conda activate /gpfs01/home/mbxtm2/miniconda3/envs/kmc_smudgeplot
-
+# Runs Smudgeplot
 echo now for smudgeplot
 kmc -k21 -t40 -m400 -ci1 -cs10000 @FILES kmcdb tmp
 kmc_tools transform kmcdb histogram kmcdb_k21.hist -cx10000
