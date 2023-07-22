@@ -10,6 +10,8 @@
 source $HOME/.bash_profile
 
 conda activate ngs_env
+
+# Generates flagstat coverage statistics for BAM fils
  
 samtools flagstat /gpfs01/home/mbxtm2/ngs_pipe/mapped_ind/BRE_3/BRE_3_masked.srtd.bam > /gpfs01/home/mbxtm2/ngs_pipe/mapped_ind/BRE_3/BRE_3_masked.flagstat.txt 
 samtools flagstat /gpfs01/home/mbxtm2/ngs_pipe/mapped_ind/CUM_1/CUM_1_masked.srtd.bam > /gpfs01/home/mbxtm2/ngs_pipe/mapped_ind/CUM_1/CUM_1_masked.flagstat.txt
@@ -28,5 +30,4 @@ samtools flagstat /gpfs01/home/mbxtm2/ngs_pipe/mapped_ind/SVA_1/SVA_1_masked.srt
 samtools flagstat /gpfs01/home/mbxtm2/ngs_pipe/mapped_ind/TAT_5/TAT_5_masked.srtd.bam > /gpfs01/home/mbxtm2/ngs_pipe/mapped_ind/TAT_5/TAT_5_masked.flagstat.txt
 samtools flagstat /gpfs01/home/mbxtm2/ngs_pipe/mapped_ind/ULR_4/ULR_4_masked.srtd.bam > /gpfs01/home/mbxtm2/ngs_pipe/mapped_ind/ULR_4/ULR_4_masked.flagstat.txt
 
-#BRE_3  CUM_1  Coverage_calc.py  DAR_1  DIE_3  ERS_1  FOR_1  FRE_013  JON_001  LWA_10  NEN_003  RYE_1  SCO_1  SVA_1  TAT_5  ULR_4
 
