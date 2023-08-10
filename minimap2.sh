@@ -12,12 +12,13 @@
 source $HOME/.bash_profile
 mamba activate minimap2
 
-#minimap2 -ax asm5 --eqx -t C_excelsa_V5.fa cochlearia_groenlandica_18Oct2019_dfYNf.fa  > excelsa_groenlandica.sam
-#minimap2 -ax asm5 --eqx -t 4 C_excelsa_V5.fa Danica_hifi_c4_dups60.asm.bp.p_ctg.fa  > excelsa_danica.sam
-#minimap2 -ax asm5 --eqx -t 4 cochlearia_groenlandica_18Oct2019_dfYNf.fa Danica_hifi_c4_dups60.asm.bp.p_ctg.fa > groenlandica_danica.sam
+# Generate alignment files for asm-to-ref mapping with SAM output
+minimap2 -ax asm5 --eqx -t C_excelsa_V5.fa cochlearia_groenlandica_18Oct2019_dfYNf.fa  > excelsa_groenlandica.sam
+minimap2 -ax asm5 --eqx -t 4 C_excelsa_V5.fa Danica_hifi_c4_dups60.asm.bp.p_ctg.fa  > excelsa_danica.sam
+minimap2 -ax asm5 --eqx -t 4 cochlearia_groenlandica_18Oct2019_dfYNf.fa Danica_hifi_c4_dups60.asm.bp.p_ctg.fa > groenlandica_danica.sam
 
-#minimap2 -cx asm5 --eqx C_excelsa_V5.fa Danica_hifi_c4_dups60.asm.bp.p_ctg.fa > excelsa-danica_eqx.paf  
-#minimap2 -cx asm5 --eqx C_excelsa_V5.fa cochlearia_groenlandica_18Oct2019_dfYNf.fa > excelsa-groenlandica_eqx.paf
-#minimap2 -cx asm5 --eqx cochlearia_groenlandica_18Oct2019_dfYNf.fa Danica_hifi_c4_dups60.asm.bp.p_ctg.fa > groenlandica-danica_eqx.paf
-
+# Generate alignment files for asm-to-ref mapping with PAF output
+minimap2 -cx asm5 --eqx C_excelsa_V5.fa Danica_hifi_c4_dups60.asm.bp.p_ctg.fa > excelsa-danica_eqx.paf  
+minimap2 -cx asm5 --eqx C_excelsa_V5.fa cochlearia_groenlandica_18Oct2019_dfYNf.fa > excelsa-groenlandica_eqx.paf
+minimap2 -cx asm5 --eqx cochlearia_groenlandica_18Oct2019_dfYNf.fa Danica_hifi_c4_dups60.asm.bp.p_ctg.fa > groenlandica-danica_eqx.paf
 minimap2 -cx asm5 --eqx Danica_hifi_c4_dups60.asm.bp.p_ctg.fa cochlearia_groenlandica_18Oct2019_dfYNf.fa > danica-groenlandica_eqx.paf
