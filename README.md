@@ -17,4 +17,4 @@
 2.) Use Quast and BUSCO for QC of assembly (quast.sh and busco.sh)  
 3.) Generate ploidy and heterozygosity analysis with Genomescope and Smudgeplot (Scope_and_smudges.sh)  
 4.) Generate dotplots by creating alignments between C. danica assembly and reference genomes using mummer (mummer_coords_shortq.sh) and running them through the web-based application Dot.  
-5.) Used Syri to visualise synteny between C. danica and reference genomes. Alignment files were generated (minimap2.sh), homologous chromosomes were extracted using Grep -e commands, chromosomes were sorted and configured using the Fixchr tool (fixchr_Chr1_Chr3.sh), synteny calculated using Syri and visualised by Plotsr.
+5.) Used Syri to visualise synteny between C. danica and reference genomes. Alignment files were generated (minimap2.sh), homologous chromosomes were extracted using Grep -e commands, chromosomes were sorted and configured using the Fixchr tool (fixchr_Chr1_Chr3.sh), synteny calculated using Syri (syri_Chr1_Chr3.sh) and visualised using Plotsr (plotsr_Chr1_Chr3.sh).
