@@ -12,4 +12,6 @@
  
 
 **Step 2: Draft assembly of HiFi reads**
+ <br />
 1.) Generated assemblies for C. danica using the program Hifiasm (and script hifiasm.sh)
+2.) Use Quast and BUSCO for QC of assembly (quast.sh and busco.sh)
