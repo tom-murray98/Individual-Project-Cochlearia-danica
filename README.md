@@ -10,3 +10,6 @@
   3.) The alignment outputs of these mappings were assessed for coverage using bedtools intersect, samtools coverage and flagstat (Using scripts samtools_coverage.sh and samtools_flagstat.sh). Bedtools_intersect.sh was used to create non-repeat region (masked) BAMs.
 
  
+
+**Step 2: Draft assembly of HiFi reads**
+1.) Generated assemblies for C. danica using the program Hifiasm (and script hifiasm.sh)
